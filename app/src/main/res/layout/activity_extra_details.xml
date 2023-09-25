@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExtraDetails"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/carrot"
+        android:src="@drawable/carrot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        app:layout_constraintTop_toBottomOf="@id/carrot"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="25dp"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:text="Enter Credentials"
+        android:fontFamily="@font/karla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/nameInp"
+        android:hint="Full name"
+        android:textSize="18dp"
+        android:inputType="textCapWords"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/karla"
+        android:layout_marginLeft="25dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintRight_toRightOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:id="@+id/phoneInp"
+        android:hint="Phone number"
+        android:textSize="18dp"
+        android:inputType="phone"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/karla"
+        android:layout_marginLeft="25dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/nameInp"
+        app:layout_constraintRight_toRightOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:id="@+id/addressInp"
+        android:hint="Address"
+        android:textSize="18dp"
+        android:inputType="textCapWords"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/karla"
+        android:layout_marginLeft="25dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/phoneInp"
+        app:layout_constraintRight_toRightOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitBtn"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:fontFamily="@font/karla"
+        android:textSize="18dp"
+        android:padding="18dp"
+        android:background="@drawable/action_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="25dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

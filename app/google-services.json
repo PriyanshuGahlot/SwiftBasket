@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "303306366974",
+    "firebase_url": "https://swiftbasket-5eded-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "swiftbasket-5eded",
+    "storage_bucket": "swiftbasket-5eded.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303306366974:android:54353801e748393eaeaaaf",
+        "android_client_info": {
+          "package_name": "com.example.swiftbasket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303306366974-qgfj59as8kefth6um0kn76qatua3sihd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhGRtnOSTgY3FebhDNVYp2s3KVyCVn_z0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303306366974-qgfj59as8kefth6um0kn76qatua3sihd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

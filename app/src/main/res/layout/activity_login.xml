@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/img"
+        android:src="@drawable/vegi_img"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:fontFamily="@font/karla"
+        android:text="Get your groceries with\nSwift Basket"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/img"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginHorizontal="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/emailInp"
+        android:hint="Email ID"
+        android:textSize="18dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/karla"
+        android:layout_marginLeft="25dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintRight_toRightOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:id="@+id/pswdInp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="18dp"
+        android:fontFamily="@font/karla"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/emailInp"
+        app:layout_constraintRight_toRightOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/activeBtn"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:fontFamily="@font/karla"
+        android:textSize="18dp"
+        android:padding="18dp"
+        android:background="@drawable/action_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pswdInp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/passiveBtn"
+        app:layout_constraintTop_toBottomOf="@id/activeBtn"
+        app:layout_constraintRight_toRightOf="@id/activeBtn"
+        app:layout_constraintLeft_toLeftOf="@id/activeBtn"
+        android:text="or Login?"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

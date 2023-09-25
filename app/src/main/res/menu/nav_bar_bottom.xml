@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/store"
+        android:title="Store"
+        android:fontFamily = "@font/karla"
+        android:icon="@drawable/store"/>
+    <item android:id="@+id/cart"
+        android:title="Cart"
+        android:fontFamily = "@font/karla"
+        android:icon="@drawable/cart"/>
+    <item android:id="@+id/account"
+        android:title="Account"
+        android:fontFamily = "@font/karla"
+        android:icon="@drawable/account"/>
+
+</menu>
