@@ -215,6 +215,7 @@ public class StoreFragment extends Fragment {
                     users.child(auth.getUid()).child("cart").child(String.valueOf(diffItemsInCart)).child("image").setValue(images.get(i));
                     users.child(auth.getUid()).child("cart").child(String.valueOf(diffItemsInCart)).child("quantity").setValue(1);
                     users.child(auth.getUid()).child("cartCount").setValue(cartCount+1);
+//                    ItemManager itemManager = new ItemManager();
                 }
 
             }).addOnCompleteListener(runnable -> {Toast.makeText(getContext(), itemNames.get(i)+" added to cart", Toast.LENGTH_SHORT).show();})
